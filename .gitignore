@@ -1,0 +1,45 @@
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+secrets/
+.aws/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data and generated logs
+**/data/raw/
+**/data/processed/
+**/data/private/
+**/logs/
+*.log
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# dbt generated files
+**/dbt_packages/
+**/target/
+
+# Editor and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
