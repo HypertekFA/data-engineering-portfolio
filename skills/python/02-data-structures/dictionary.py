@@ -48,3 +48,25 @@ donations.popitem()
 print(donations)
 donations.update({"sam": 25.0, "lena": 88.99})
 print(donations)
+
+playlist = {
+    "title": "My Favorite Songs",
+    "author": "John Doe",
+    "songs": [{
+        "title": "Song 1",
+        "artist": "Artist 1",
+        "duration": 180
+    },
+    {
+        "title": "Song 2",
+        "artist": "Artist 2",
+        "duration": 200
+    },
+    {
+        "title": "Song 3",
+        "artist": "Artist 3",
+        "duration": 240
+    }]
+}
+for song in playlist["songs"]:
+    print(f"Title: {song['title']}, Artist: {song['artist']}, Duration: {song['duration']} seconds")
